@@ -53,6 +53,10 @@ $tuuing-error-text: $tuuing-error-label;
       &:focus {
         outline-color: $tuuing-error-details;
       }
+
+      &::placeholder {
+        color: $tuuing-error-text;
+      }
     }
   }
 

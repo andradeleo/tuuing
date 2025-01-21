@@ -15,7 +15,8 @@ export const Default: Story = {
     id: "default-input",
     label: "Name",
     placeholder: "Your Name",
-    type: "text"
+    type: "text",
+    errors: ""
   }
 }
 
@@ -24,6 +25,7 @@ export const WithError: Story = {
     id: "error-input",
     label: "Email",
     type: "email",
-    errors: ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt."]
+    placeholder: "contact#tuuing.com",
+    errors: ["Lorem ipsum dolor."]
   }
 }
