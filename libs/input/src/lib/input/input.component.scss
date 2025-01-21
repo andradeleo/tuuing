@@ -1,0 +1,67 @@
+$zinc-300: #d4d4d8;
+$zinc-400: #a1a1aa;
+$zinc-800: #27272a;
+
+$red-300: #fca5a5;
+$red-500: #ef4444;
+$red-600: #dc2626;
+
+$tuuing-color-label: $zinc-800;
+$tuuing-error-label: $red-600;
+$tuuing-error-field: $red-500;
+$tuuing-error-details: $red-300;
+$tuuing-error-text: $tuuing-error-label;
+
+.tuuing-input {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__label {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: $tuuing-color-label;
+
+    &--with-error {
+      color: $tuuing-error-label;
+    }
+  }
+
+  &__field {
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid $zinc-300;
+    padding: 0px 12px;
+
+    &:focus {
+      outline: 2px solid $zinc-400;
+      outline-offset: 2px;
+    }
+
+    &::placeholder {
+      opacity: 0.7;
+      font-family: sans-serif;
+    }
+
+    &--with-error{
+      border-color: $tuuing-error-field;
+      color: $tuuing-error-text;
+
+      &:focus {
+        outline-color: $tuuing-error-details;
+      }
+    }
+  }
+
+  &__description {
+    font-family: sans-serif;
+    font-size: 12px;
+
+    &--with-error {
+      color: $tuuing-error-text;
+    }
+  }
+}

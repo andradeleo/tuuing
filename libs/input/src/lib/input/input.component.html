@@ -1,0 +1,22 @@
+<div class="tuuing-input__container">
+  @if (label) {
+    <label
+      class="tuuing-input__label"
+      [ngClass]="{'tuuing-input__label--with-error': hasError}"
+      [for]="id">
+        {{ label }}
+    </label>
+  }
+  <input
+    class="tuuing-input__field"
+    [ngClass]="{'tuuing-input__field--with-error': hasError}"
+    [type]="type"
+    [disabled]="disabled"
+    [id]="id"
+    [placeholder]="placeholder">
+  <span
+    class="tuuing-input__description"
+    [ngClass]="{'tuuing-input__field--with-error': hasError}">
+    {{ errors[0]}}
+  </span>
+</div>
