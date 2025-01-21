@@ -4,6 +4,9 @@ const preview: Preview = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: {
+      disableSaveFromUI: true
+    }
   },
 };
 
