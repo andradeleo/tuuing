@@ -2,21 +2,19 @@
   @if (label) {
     <label
       class="tuuing-input__label"
-      [ngClass]="{'tuuing-input__label--with-error': hasError}"
+      [ngClass]="{'tuuing-input__label--with-error': getInputErrors() }"
       [for]="id">
         {{ label }}
     </label>
   }
   <input
     class="tuuing-input__field"
-    [ngClass]="{'tuuing-input__field--with-error': hasError}"
+    [ngClass]="{'tuuing-input__field--with-error': getInputErrors() }"
     [type]="type"
     [disabled]="disabled"
     [id]="id"
-    [placeholder]="placeholder">
-  <span
-    class="tuuing-input__description"
-    [ngClass]="{'tuuing-input__field--with-error': hasError}">
-    {{ errors[0]}}
-  </span>
+    [placeholder]="placeholder"
+    [value]="internalValue"
+    (input)="onInput($event)"
+    (blur)="onTouched()">
 </div>

@@ -59,13 +59,4 @@ $tuuing-error-text: $tuuing-error-label;
       }
     }
   }
-
-  &__description {
-    font-family: sans-serif;
-    font-size: 12px;
-
-    &--with-error {
-      color: $tuuing-error-text;
-    }
-  }
 }
