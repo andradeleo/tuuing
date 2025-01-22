@@ -16,16 +16,5 @@ export const Default: Story = {
     label: "Name",
     placeholder: "Your Name",
     type: "text",
-    errors: ""
-  }
-}
-
-export const WithError: Story = {
-  args: {
-    id: "error-input",
-    label: "Email",
-    type: "email",
-    placeholder: "contact#tuuing.com",
-    errors: ["Lorem ipsum dolor."]
   }
 }
