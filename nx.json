@@ -90,6 +90,7 @@
     }
   },
   "release": {
+    "projectsRelationship": "independent",
     "projects": [
       "libs/input",
       "libs/button"
