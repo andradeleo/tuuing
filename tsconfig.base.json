@@ -23,6 +23,9 @@
       ],
       "@tuuing/storybook-docs": [
         "libs/storybook-docs/src/index.ts"
+      ],
+      "@tuuing/button": [
+        "libs/button/src/index.ts"
       ]
     }
   },
