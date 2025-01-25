@@ -9,6 +9,9 @@ const icon =
 const meta: Meta<ButtonComponent> = {
   title: "Components/Button",
   component: ButtonComponent,
+  args: {
+    type: "button"
+  },
   render: (args) => ({
     props: args,
     template: `
