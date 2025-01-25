@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
 })
 export class ButtonComponent {
   @Input() public disabled: boolean = false;
-  @Input() public variant: "primary" | "secondary" | "destructive" = "primary"
+  @Input() public variant: "primary" | "secondary" | "destructive" = "primary";
+  @Input() public type: "submit" | "button" | "reset" = "button";
 }
